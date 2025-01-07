@@ -5,8 +5,8 @@
 let CONFIG = {
   pvURL: "https://pvoutput.org/service/r2/addstatus.jsp";
   httpHeaders: {
-    "X-Pvoutput-Apikey": "<API Key>",
-    "X-Pvoutput-SystemId": "<System Id>",
+    "X-Pvoutput-Apikey": "<API Key>",  /* eg "12345" */
+    "X-Pvoutput-SystemId": "<System Id>",  /* eg "b7ea8f3cd62...e2af72b" */
     "Content-Type": "application/x-www-form-urlencoded"
   },
 };
