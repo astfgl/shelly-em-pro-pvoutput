@@ -22,5 +22,5 @@ var myDate = new Date();
 var myDateString = myDate.getFullYear() 
   + ('0' + (myDate.getMonth()+1)).slice(-2) 
   + ('0' + myDate.getDate()).slice(-2);
-print(myDateString);
+console.log("Today is ", myDateString);
 
