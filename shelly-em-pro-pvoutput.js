@@ -5,11 +5,13 @@
 let CONFIG = {
   pvURL: "https://pvoutput.org/service/r2/addstatus.jsp";
   httpHeaders: {
-    "X-Pvoutput-Apikey": "<API Key>",  /* eg "12345" */
-    "X-Pvoutput-SystemId": "<System Id>",  /* eg "b7ea8f3cd62...e2af72b" */
+    "X-Pvoutput-Apikey": "<API Key>", /* eg "12345" */
+    "X-Pvoutput-SystemId": "<System Id>", /* eg "b7ea8f3cd62...e2af72b" */
     "Content-Type": "application/x-www-form-urlencoded"
   },
 };
+
+let updateInterval = 5 * 60 * 1000; /* 5 minutes */
 
 /* State information for Energy and Power calculation */
 var solarImportTotal;
